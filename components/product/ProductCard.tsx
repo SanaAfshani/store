@@ -1,4 +1,4 @@
-import { Plus, Star } from '@/icons'
+import { Star } from '@/icons'
 import ResponsiveImage from "@/components/common/ResponsiveImage";
 import truncate from "@/utils/truncate";
 import DiscountProduct from "@/components/product/DiscountProduct";
