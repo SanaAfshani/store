@@ -12,10 +12,15 @@ describe('Header component', () => {
         render( <Provider store={store}>
             <Header />
         </Provider>);
+        // @ts-ignore
         expect(screen.getByTestId('apple-icon')).toBeInTheDocument();
+        // @ts-ignore
         expect(screen.getByTestId('apple-icon')).toHaveClass('w-24 h-14');
+        // @ts-ignore
         expect(screen.getByTestId('search-modal')).toBeInTheDocument();
+        // @ts-ignore
         expect(screen.getByTestId('basket-icon')).toBeInTheDocument();
+        // @ts-ignore
         expect(screen.getByTestId('login-component')).toBeInTheDocument();
     });
 });
