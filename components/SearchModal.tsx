@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef, FC} from 'react'
+import React, {useState, useEffect, useRef, FC} from 'react'
 import { Close, Search } from '@/icons'
 import Modal from "@/components/common/Modal";
 import DataStateDisplay from "@/components/common/DataStateDisplay";

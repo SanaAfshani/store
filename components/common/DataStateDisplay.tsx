@@ -4,6 +4,7 @@ import type { FetchBaseQueryError } from '@reduxjs/toolkit/dist/query'
 import {Button} from "@/components/common/Buttons";
 import EmptyCustomList from "@/components/emptyList/EmptyCustomList";
 import BigLoading from "@/components/loading/BigLoading";
+import React from "react";
 
 interface Props {
   isError: boolean
@@ -18,7 +19,6 @@ interface Props {
 }
 
 const DataStateDisplay: React.FC<Props> = (props) => {
-  //? Porps
   const {
     isError,
     error,
@@ -31,7 +31,6 @@ const DataStateDisplay: React.FC<Props> = (props) => {
     children,
   } = props
 
-  //? Render(s)
   return (
     <section>
       {isError && error ? (

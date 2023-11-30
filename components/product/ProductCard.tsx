@@ -3,30 +3,11 @@ import ResponsiveImage from "@/components/common/ResponsiveImage";
 import truncate from "@/utils/truncate";
 import DiscountProduct from "@/components/product/DiscountProduct";
 import ProductPrice from "@/components/product/ProductPrice";
+import React from "react";
 
-
-// interface Props {
-//   product: Pick<
-//     IProduct,
-//     | '_id'
-//     | 'colors'
-//     | 'discount'
-//     | 'images'
-//     | 'inStock'
-//     | 'price'
-//     | 'rating'
-//     | 'sold'
-//     | 'title'
-//     | 'slug'
-//   >
-//   slide?: boolean
-// }
 
 const ProductCard: React.FC<any> = (props) => {
-  //? Props
   const { product, slide } = props
-
-  //? Render(s)
   return (
     <div className='cursor-pointer'>
       <article

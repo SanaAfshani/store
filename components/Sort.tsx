@@ -7,6 +7,7 @@ import useChangeRoute from "@/hooks/useChangeRoute";
 import Modal from "@/components/common/Modal";
 import {sorts} from "@/utils/constatns";
 import {IProductsType} from "@/types/IProducts.type";
+import React from "react";
 
 interface Props {
   data: IProductsType[],

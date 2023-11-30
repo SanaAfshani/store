@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import useChangeRoute from "@/hooks/useChangeRoute";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import IPagination from "@/types/IPagination.type";
-import {Dispatch, SetStateAction} from "react";
+import React, {Dispatch, SetStateAction} from "react";
 import {IProductsType} from "@/types/IProducts.type";
 
 interface Props {
@@ -33,7 +33,7 @@ const Pagination: React.FC<Props> = ({ pagination, section, client,setSortedData
   const handleChangePage = (page: number) => {
     changeRoute({
       ...query,
-      page: page.toString(), // Assuming your query parameter for pagination is "page"
+      page: page.toString(),
     });
     scrollToTop();
   };

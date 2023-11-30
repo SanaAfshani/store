@@ -1,5 +1,6 @@
 import DiscountProduct from "@/components/product/DiscountProduct";
 import formatNumber from "@/utils/formatNumber";
+import React from "react";
 
 interface Props {
   singleProduct?: boolean
