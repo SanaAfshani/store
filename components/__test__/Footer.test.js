@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import {describe, expect, test} from "@jest/globals";
-import Footer from "@/components/Footer"; // Update the path to your Footer component
 import '@testing-library/jest-dom'
+import Footer from '../Footer'
 
 describe('Footer Component', () => {
     test('renders Footer component with required elements', () => {
@@ -12,14 +12,11 @@ describe('Footer Component', () => {
         const supportDescription = screen.getByText('۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم');
 
         // Assert that the support phone number and its description are present
-        // @ts-ignore
         expect(supportPhoneNumber).toBeInTheDocument();
-        // @ts-ignore
         expect(supportDescription).toBeInTheDocument();
 
         // Check if the "Back to Top" button is present
         const backButton = screen.getByRole('button', { name: 'بازگشت به بالا' });
-        // @ts-ignore
         expect(backButton).toBeInTheDocument();
 
         // Check if the footer content is present
@@ -33,9 +30,7 @@ describe('Footer Component', () => {
             'که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و ' +
             'توانسته از این طریق مشتریان ثابت خود را داشته باشد.'
         );
-        // @ts-ignore
         expect(footerContent).toBeInTheDocument();
-        // @ts-ignore
         expect(footerDescription).toBeInTheDocument();
     });
 });
