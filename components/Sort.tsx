@@ -58,7 +58,7 @@ const Sort: React.FC<Props> = ({data,onSortChange}) => {
         >
           <Modal.Content
             onClose={sortHandlers.close}
-            className='flex flex-col h-full px-5 py-3 bg-white md:rounded-lg gap-y-5 '
+            className='flex flex-col px-5 py-3 bg-white md:rounded-lg gap-y-5 '
           >
             <Modal.Header onClose={sortHandlers.close}>مرتب سازی</Modal.Header>
             <Modal.Body>
